@@ -5,15 +5,16 @@ let calcAverage = 0;
 
 const values = Object.values(days)
 // console.log(values)
-
+if (days.length > 0) {
 for (const oneDay of values) {
     // console.log(oneDay.calories)
     sumCalories += oneDay.calories
     // console.log(sumCalories)
-    
 }
 return calcAverage = sumCalories / days.length
-
+} else {
+    return calcAverage = 0;
+}
 }
 
 
